@@ -62,3 +62,9 @@
 #contact .demo-contact-form .form-safe>span{color:#3f9b70;margin-right:5px}
 #contact .demo-contact-form .form-submit{min-height:55px;padding-right:25px}
 @media(max-width:540px){#contact form.demo-contact-form{border-radius:15px;padding:25px 18px}#contact .demo-contact-form .form-top{gap:10px}#contact .demo-contact-form .form-top h4{font-size:29px}#contact .demo-contact-form .form-demo-badge{padding:6px 9px}#contact .demo-contact-form .form-grid{gap:20px}#contact .demo-contact-form .form-safe{text-align:center}}
+
+/* 360° rotatie op contactster rechtsboven; tekst blijft zichtbaar */
+.navigation .nav-contact .cta-icon{display:grid;place-items:center;transform:rotate(0deg);transition:transform .75s cubic-bezier(.2,.8,.2,1),background .2s,color .2s;will-change:transform}
+.navigation .nav-contact:hover .cta-icon,.navigation .nav-contact:focus-visible .cta-icon{transform:rotate(360deg)}
+.navigation .nav-contact:hover,.navigation .nav-contact:focus-visible{color:var(--navy)}
+@media(prefers-reduced-motion:reduce){.navigation .nav-contact .cta-icon{transition:none}}
