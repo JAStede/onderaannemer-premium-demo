@@ -40,3 +40,25 @@
 #contact .demo-contact-form .form-feedback[hidden]{display:none}
 @media(max-width:900px){#contact .demo-form-wrap{grid-template-columns:minmax(0,1fr);gap:30px;margin-top:65px}}
 @media(max-width:540px){#contact .demo-form-wrap{margin-top:50px}#contact form.demo-contact-form{padding:22px 18px}#contact .demo-contact-form .form-grid{grid-template-columns:minmax(0,1fr);gap:20px}#contact .demo-contact-form .form-grid>label.form-full{grid-column:1}#contact .demo-contact-form .form-bottom{flex-direction:column;align-items:stretch}#contact .demo-contact-form .form-submit{width:100%}#contact .demo-contact-form .form-bottom>span{text-align:center}}
+
+/* Formulier v2: consistente veldlabels, duidelijke visuele hiërarchie */
+#contact form.demo-contact-form{border-radius:20px;padding:clamp(25px,3.3vw,48px);background:linear-gradient(150deg,#fff 0%,#fff 72%,#fafbf9 100%);box-shadow:0 25px 75px #15313a18}
+#contact .demo-contact-form .form-top{align-items:flex-start;border-bottom:1px solid #e8eeeb;padding-bottom:26px;margin-bottom:30px}
+#contact .demo-contact-form .form-eyebrow{display:block;color:#c75e38;font-size:10px;font-weight:800;letter-spacing:.17em;margin-bottom:11px}
+#contact .demo-contact-form .form-top h4{font:700 clamp(28px,2.6vw,38px)/1.1 "Barlow Condensed",sans-serif;letter-spacing:0;margin:0 0 9px;color:#162c34}
+#contact .demo-contact-form .form-top p{font:400 13px/1.6 "DM Sans",sans-serif;letter-spacing:0;color:#697c80;margin:0}
+#contact .demo-contact-form .form-demo-badge{flex-shrink:0;border:1px solid #ff784980;border-radius:100px;padding:7px 12px;background:#fff0e9;color:#a94e2e;font-size:10px;font-weight:800;letter-spacing:.12em}
+#contact .demo-contact-form .form-grid{gap:25px 20px}
+#contact .demo-contact-form .form-grid>label{gap:9px}
+#contact .demo-contact-form .field-label{display:flex;align-items:center;gap:6px;color:#19353c;font-size:12px;font-weight:800;letter-spacing:0;line-height:1.4}
+#contact .demo-contact-form .field-label .required{color:#d15d35}
+#contact .demo-contact-form .field-label .optional{font-size:10px;font-weight:500;color:#8a999b}
+#contact .demo-contact-form .form-grid :is(input,select,textarea){border:1px solid #dbe4e1;background:#f7f9f8;border-radius:9px;padding:15px 16px;font-size:14px;transition:border-color .2s,box-shadow .2s,background .2s}
+#contact .demo-contact-form .form-grid :is(input,select,textarea):focus{background:#fff;border-color:#ff7849;outline:0;box-shadow:0 0 0 4px #ff78491c}
+#contact .demo-contact-form .form-grid textarea{min-height:155px}
+#contact .demo-contact-form .form-privacy{border-top:1px solid #e9efec;padding-top:23px;margin-top:29px;font-size:12px;color:#627478}
+#contact .demo-contact-form .form-bottom{border-top:1px solid #e9efec;padding-top:25px;margin-top:26px}
+#contact .demo-contact-form .form-safe{font-size:9px;letter-spacing:.08em;font-weight:800;color:#718681;white-space:normal}
+#contact .demo-contact-form .form-safe>span{color:#3f9b70;margin-right:5px}
+#contact .demo-contact-form .form-submit{min-height:55px;padding-right:25px}
+@media(max-width:540px){#contact form.demo-contact-form{border-radius:15px;padding:25px 18px}#contact .demo-contact-form .form-top{gap:10px}#contact .demo-contact-form .form-top h4{font-size:29px}#contact .demo-contact-form .form-demo-badge{padding:6px 9px}#contact .demo-contact-form .form-grid{gap:20px}#contact .demo-contact-form .form-safe{text-align:center}}
