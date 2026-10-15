@@ -19,3 +19,24 @@
 .marquee-track{animation:marquee 32s linear infinite;flex-wrap:nowrap;width:max-content;will-change:transform}
 .marquee-set{flex:0 0 auto}
 @media(prefers-reduced-motion:reduce){.marquee-track{animation:none}}
+
+/* Contactformulier layout fix: expliciete layout en isolatie tegen bestaande stijlen */
+#contact .demo-form-wrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);align-items:start;gap:clamp(28px,5vw,76px);margin-top:90px}
+#contact .demo-form-intro,#contact .demo-contact-form{min-width:0}
+#contact .demo-form-intro{display:block}
+#contact .demo-form-intro h3{font:800 clamp(52px,5.8vw,86px)/.96 "Barlow Condensed",sans-serif;letter-spacing:-.015em;margin:16px 0 24px}
+#contact .demo-form-intro>p{max-width:420px;line-height:1.75}
+#contact form.demo-contact-form{display:block;width:100%;padding:clamp(24px,3vw,42px);background:#fff;border:1px solid #e1e6e4;box-shadow:0 20px 55px #15313a1b;border-radius:12px}
+#contact .demo-contact-form .form-top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-bottom:18px;margin-bottom:27px}
+#contact .demo-contact-form .form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:23px 20px;width:100%}
+#contact .demo-contact-form .form-grid>label{display:flex;flex-direction:column;align-items:stretch;gap:9px;min-width:0;width:100%;font-size:13px;font-weight:700}
+#contact .demo-contact-form .form-grid>label.form-full{grid-column:1/-1}
+#contact .demo-contact-form .form-grid :is(input,select,textarea){display:block;box-sizing:border-box;width:100%;max-width:100%;min-width:0;min-height:52px;margin:0;padding:14px 15px;border:1px solid #d3dddc;border-radius:7px;background:#f8faf9;color:#162c34;font:500 14px/1.5 "DM Sans",sans-serif}
+#contact .demo-contact-form .form-grid textarea{min-height:145px;resize:vertical}
+#contact .demo-contact-form .form-privacy{display:flex;gap:12px;align-items:flex-start;margin:24px 0 0;line-height:1.6}
+#contact .demo-contact-form .form-privacy input{width:18px;height:18px;min-width:18px;margin:2px 0 0}
+#contact .demo-contact-form .form-bottom{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:25px}
+#contact .demo-contact-form .form-submit{display:inline-flex;align-items:center;justify-content:flex-start;gap:12px;min-height:55px;white-space:normal}
+#contact .demo-contact-form .form-feedback[hidden]{display:none}
+@media(max-width:900px){#contact .demo-form-wrap{grid-template-columns:minmax(0,1fr);gap:30px;margin-top:65px}}
+@media(max-width:540px){#contact .demo-form-wrap{margin-top:50px}#contact form.demo-contact-form{padding:22px 18px}#contact .demo-contact-form .form-grid{grid-template-columns:minmax(0,1fr);gap:20px}#contact .demo-contact-form .form-grid>label.form-full{grid-column:1}#contact .demo-contact-form .form-bottom{flex-direction:column;align-items:stretch}#contact .demo-contact-form .form-submit{width:100%}#contact .demo-contact-form .form-bottom>span{text-align:center}}
