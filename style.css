@@ -77,3 +77,11 @@
 .round-link>span{display:block;max-width:100%;font-size:12px;line-height:1.35;font-weight:800;white-space:normal;overflow-wrap:normal}
 .round-link>.star-svg{display:block;width:28px;height:28px;min-width:28px;flex-shrink:0}
 @media(max-width:540px){.round-link{width:136px;height:136px;min-width:136px;min-height:136px;padding:17px;gap:10px}.round-link>span{font-size:12px;line-height:1.3}}
+
+/* Definitieve mobiele correctie: expliciete breedte EN hoogte voor SVG's */
+.round-link{display:inline-flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:8px!important;width:140px!important;height:140px!important;min-width:140px!important;min-height:140px!important;max-width:140px!important;max-height:140px!important;padding:20px!important;box-sizing:border-box!important;overflow:hidden!important;border-radius:50%!important;text-align:center!important}
+.round-link>.star-svg{display:block!important;width:27px!important;height:27px!important;min-width:27px!important;min-height:27px!important;max-width:27px!important;max-height:27px!important;flex:none!important}
+.round-link>span{display:block!important;width:auto!important;max-width:95px!important;flex:none!important;font-size:11px!important;line-height:1.25!important;white-space:nowrap!important;letter-spacing:0!important;text-align:center!important;margin:0!important}
+.process-card .process-glyph{display:flex;align-items:center;justify-content:flex-start;height:58px;max-height:58px;margin:24px 0;line-height:1}
+.process-card .process-glyph>.star-svg{display:block!important;width:48px!important;height:48px!important;min-width:48px!important;min-height:48px!important;max-width:48px!important;max-height:48px!important;flex:0 0 48px!important;overflow:visible}
+@media(max-width:540px){.round-link{width:140px!important;height:140px!important;max-width:140px!important;max-height:140px!important}.process-card .process-glyph>.star-svg{width:42px!important;height:42px!important;min-width:42px!important;min-height:42px!important;max-width:42px!important;max-height:42px!important;flex-basis:42px!important}}
