@@ -71,3 +71,9 @@
 
 /* SVG-iconen consistent op mobiel en desktop, tap feedback zonder hover */
 .star-svg{display:block;width:22px;height:22px;flex-shrink:0;overflow:visible}.cta-icon .star-svg,.spin-star .star-svg{width:20px;height:20px;transform-origin:center;transition:transform .7s cubic-bezier(.2,.8,.2,1)}.service-pill .star-svg,.project-symbol .star-svg,.process-glyph .star-svg,.round-link>.star-svg{width:25px;height:25px}.visual-sticker .star-svg{display:inline-block;width:22px;height:22px;vertical-align:middle}.navigation .nav-contact:hover .star-svg,.navigation .nav-contact:focus-visible .star-svg,.navigation .nav-contact.is-animating .star-svg,.button:hover .spin-star .star-svg,.button:focus-visible .spin-star .star-svg,.button.is-animating .spin-star .star-svg{transform:rotate(360deg)}.navigation .nav-contact .cta-icon{transform:none!important}.button:hover .spin-star,.button:focus-visible .spin-star{transform:none}.eye-icon .eye-lid{opacity:1}.button.is-animating .eye-icon .eye-lid{opacity:0;transform:translateY(-8px)}.button.is-animating .eye-icon .eye-outline{opacity:1;transform:scaleY(1.2)}.button.is-animating .eye-icon .eye-pupil{opacity:1;transform:scale(1.25)}@media(prefers-reduced-motion:reduce){.cta-icon .star-svg,.spin-star .star-svg{transition:none}}
+
+/* Onze aanpak: tekst en icoon blijven altijd binnen de ronde knop */
+.round-link{width:140px;height:140px;min-width:140px;min-height:140px;padding:18px;box-sizing:border-box;flex-shrink:0;text-align:center;overflow:hidden;gap:12px}
+.round-link>span{display:block;max-width:100%;font-size:12px;line-height:1.35;font-weight:800;white-space:normal;overflow-wrap:normal}
+.round-link>.star-svg{display:block;width:28px;height:28px;min-width:28px;flex-shrink:0}
+@media(max-width:540px){.round-link{width:136px;height:136px;min-width:136px;min-height:136px;padding:17px;gap:10px}.round-link>span{font-size:12px;line-height:1.3}}
